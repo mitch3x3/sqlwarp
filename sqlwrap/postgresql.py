@@ -1,7 +1,7 @@
 import os
 import logging
 import psycopg2 as db
-
+from typing import List
 TIMEOUT = 20  # seconds
 
 
@@ -33,7 +33,7 @@ class PostgreSQL(object):
     def __del__(self):
         self.close()
 
-    def query(self, query, params=None):
+    def query(self, query: str, params={}: dict) -> List[tuple]:
         try:
             self.cur.execute(query, params)
 
