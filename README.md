@@ -122,7 +122,6 @@ conn_args = {
     'host': 'localhost',
     'port': 5432
 }
-# conn_args = "dbname=eduandme user=mitch password=jsEj_wj3h2 port=5432 host=localhost"
 ```
 
 ``` python
